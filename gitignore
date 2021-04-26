@@ -53,3 +53,4 @@ node_modules
 .sass-cache
 .Rhistory
 .ipynb_checkpoints
+.bak
