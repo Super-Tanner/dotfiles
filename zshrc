@@ -1,3 +1,14 @@
+#If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/beamt/.oh-my-zsh"
+
+# Env Variables
+export QUBOLE_JDBC_JAR_PATH="$HOME/jar/qds-jdbc-2.3.2.jar"
+export CLASSPATH="$HOME/jar/*"
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -5,15 +16,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/beamt/.oh-my-zsh"
-
-# Env Variables
- export QUBOLE_JDBC_JAR_PATH="$HOME/jar/qds-jdbc-2.3.2.jar"
- export CLASSPATH="$HOME/jar/*"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -25,6 +27,9 @@ POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs anaconda)
 POWERLEVEL10K_ANACONDA_BACKGROUND='red'
 POWERLEVEL10K_CONTEXT_DEFAULT_FOREGROUND='lightgreen'
 POWERLEVEL10K_DISABLE_RPROMPT=true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -84,7 +89,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize pip python brew osx virtualenv)
+plugins=(git colored-man-pages colorize pip python brew macos virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/conda_auto_env.sh
@@ -127,6 +132,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
