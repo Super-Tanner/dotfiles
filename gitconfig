@@ -3,6 +3,6 @@
 	editor = subl -n -w
 [user]
 	name = Tanner Beam
-	email = tanner.beam@autodesk.com
+	email = tanner@superconductive.com
 [alias]
 	ac = !git add -A && git commit
