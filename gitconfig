@@ -4,3 +4,5 @@
 [user]
 	name = Tanner Beam
 	email = tanner.beam@autodesk.com
+[alias]
+	ac = !git add -A && git commit

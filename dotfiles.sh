@@ -30,6 +30,9 @@ ln -nsf ~/git/dotfiles/Preferences.sublime-settings ~/Library/Application\ Suppo
 ln -nsf ~/git/dotfiles/condarc ~/.condarc
 ln -nsf ~/git/dotfiles/conda_auto_env.sh $ZSH/conda_auto_env.sh
 
+# databricks
+ln -nsf ~/git/dotfiles/databrickscfg ~/.databrickscfg
+
 # datagrip
   # -- make sure latest version is symlinked to DataGrip 
   # -- e.g. ln -nsf /Library/Preferences/DataGrip ~/Library/Preferences/DataGrip.someversion
