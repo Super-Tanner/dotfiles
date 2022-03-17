@@ -14,6 +14,9 @@ sudo -v
 echo "OK, cool."
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# ssh
+ln -nsf ~/git/dotfiles/sshconfig ~/.ssh/config
+
 # zsh
 ln -nsf ~/git/dotfiles/zshrc ~/.zshrc
 ln -nsf ~/git/dotfiles/oh-my-zsh.sh $ZSH/oh-my-zsh.sh
