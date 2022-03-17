@@ -9,6 +9,7 @@
 
 # Auth credentials
 credentials.*
+databrickscfg
 
 # General
 .DS_Store
