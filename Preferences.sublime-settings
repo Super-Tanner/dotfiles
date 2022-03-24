@@ -36,10 +36,9 @@
 	"open_files_in_new_window": false,
 	"rulers":
 	[
-		80
+		88
 	],
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"word_wrap": true,
-	"wrap_width": 80,
+	"word_wrap": false
 }

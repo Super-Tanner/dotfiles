@@ -6,3 +6,9 @@
 	email = tanner@superconductive.com
 [alias]
 	ac = !git add -A && git commit
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
