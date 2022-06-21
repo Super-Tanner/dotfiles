@@ -1,36 +1,46 @@
 # dotfiles
-Config files for zsh, sublime, conda, etc.
+symlinked config files for zsh, sublime, git, pycharm, etc.
 
 ## Executable Files
 
 **dotfiles.sh**
-Create symlinks for config files and executables 
 
-**conda_auto_env.sh** 
-Automatically switches conda env based on `environment.yml` file contained in directory.
-Added to .zshrc as `source ... ` 
-[via](https://janosh.io/blog/conda-auto-env)
+- create symlinks for config files and executables 
+- sudo required
+
+**path_rebuild.sh** 
+
+- just in case `$PATH` gets snarled...
 
 **oh-my-zsh.sh**
-Added to .zshrc as `source ...`
-Symlinked to `$ZSH/oh-my-zsh.sh` 
+
+- Added to .zshrc as source
+- symlinked to `$ZSH/oh-my-zsh.sh`
 
 ## Config Files
-- **condarc**
-Custom settings for conda. Symlinked to `~/` as dotfile
 
-- **Preferences.sublime-settings**
-Custom settings for sublime text. 
-Symlinked to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User` 
+**Preferences.sublime-settings**
+- custom settings for sublime text
+- symlinked to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User` 
 
-- **Conda.sublime-settings**
-Custom settings for sublime-text-conda package. 
-Symlinked to `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`
+**zshrc**
+- custom settings for oh-my-zsh
+- symlinked to `~/.zshrc` 
 
-- **zshrc**
-Custom settings for oh-my-zsh. 
-Symlinked to `~/` as dotfile
+**gitignore**
+- global gitignore
+- add to global config with `git config --global core.excludesfile ~/.gitignore` 
+- symlinked to `~/
 
-- **gitignore**
-Global gitignore. 
-Add to global config with `git config --global core.excludesfile ~/.gitignore`. Symlinked to `~/` as dotfile
+**sshconfig**
+- Mac OSX ssh config
+- symlinked to `~/.ssh/config` 
+
+**gitconfig**
+- Mac OSX git config
+- Symlinked to `~.gitconfig`
+
+**databrickscfg**
+- databricks api creds
+- excluded from source control for obvious reasons
+- symlinked to `~/.databrickscfg

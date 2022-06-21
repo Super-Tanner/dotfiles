@@ -1,12 +1,8 @@
 #If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/beamt/.oh-my-zsh"
-
-# Env Variables
-export QUBOLE_JDBC_JAR_PATH="$HOME/jar/qds-jdbc-2.3.2.jar"
-export CLASSPATH="$HOME/jar/*"
 
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -23,7 +19,7 @@ fi
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs anaconda)
+POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
 POWERLEVEL10K_ANACONDA_BACKGROUND='red'
 POWERLEVEL10K_CONTEXT_DEFAULT_FOREGROUND='lightgreen'
 POWERLEVEL10K_DISABLE_RPROMPT=true
@@ -92,7 +88,6 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git colored-man-pages colorize pip python brew macos virtualenv)
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH/conda_auto_env.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -118,17 +113,6 @@ source $ZSH/conda_auto_env.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# Initialization of pyenv
+eval "$(pyenv init --path)"
+
