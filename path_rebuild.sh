@@ -1,1 +1,2 @@
-export PATH=/Users/beamt/.pyenv/shims:/Users/beamt/bin:/usr/local/bin:/Users/beamt/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=""
+export PATH=/Users/beamt/.pyenv/shims:/Users/beamt/bin:/Users/beamt/.local/bin/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/usr/sbin:/bin:/sbin:

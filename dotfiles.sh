@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Symlinks for config files
-# modified by Tanner Beam @tannerdotbeam
 
 # Main
 # ====
@@ -30,6 +29,9 @@ ln -nsf ~/git/dotfiles/Preferences.sublime-settings ~/Library/Application\ Suppo
 
 # databricks
 ln -nsf ~/git/dotfiles/databrickscfg ~/.databrickscfg
+
+# powerlevel10k zsh theme
+ln -nsf ~/git/dotfiles/p10kconfig ~/.p10k.zsh
 
 
 echo "All done!"

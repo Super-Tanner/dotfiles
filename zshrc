@@ -20,7 +20,6 @@ fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
-POWERLEVEL10K_ANACONDA_BACKGROUND='red'
 POWERLEVEL10K_CONTEXT_DEFAULT_FOREGROUND='lightgreen'
 POWERLEVEL10K_DISABLE_RPROMPT=true
 
@@ -113,6 +112,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+autoload -U bashcompinit
+bashcompinit 
+
 # Initialization of pyenv
 eval "$(pyenv init --path)"
+eval "$( pip completion --zsh )"
+eval "$( register-python-argcomplete pipx )"
+#eval "$( pipenv --completion )"
 
+
+
+
+# Created by `pipx` on 2022-06-21 22:12:50
+export PATH="$PATH:/Users/beamt/.local/bin"
