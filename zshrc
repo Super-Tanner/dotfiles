@@ -122,7 +122,5 @@ eval "$( register-python-argcomplete pipx )"
 #eval "$( pipenv --completion )"
 
 
-
-
-# Created by `pipx` on 2022-06-21 22:12:50
-export PATH="$PATH:/Users/beamt/.local/bin"
+# databricks cli config file 
+export DATABRICKS_CONFIG_FILE="/Users/beamt/.databrickscfg"
