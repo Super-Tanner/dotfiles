@@ -33,6 +33,9 @@ Thumbs.db
 *.pyc
 venv
 *.ipynb_checkpoints
+Pipfile
+Pipfile.lock
+.python-version
 
 # Other
 *.out
